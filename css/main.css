@@ -1,0 +1,322 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+body, html {
+    height: 100%;
+}
+body{
+    background: url("../pics/davinci.jpg");
+    background-size: cover;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#wrapper{
+    background-color: rgba(255,255,255,0.7);
+    
+}
+h2{
+    padding: 2rem 0;
+}
+/*-------------Header----------*/
+#banner{
+    background: url("../pics/monabaner.jpeg") no-repeat ;
+    background-size: 100% 100%;
+    text-align: center;
+    display:table-cell; 
+    vertical-align:middle;
+    height: 200px;
+    width: 100vw;    
+    color: #fff;
+    border-bottom: solid 1rem #fff;
+}
+#title{
+    font-size: 3em;
+}
+/*------------FIN Header---------------*/
+/*---------------Warning---------------*/
+#warning{
+    background-color:rgba(245, 9, 9, 0.74);
+    padding: 0.5rem;
+    color: #fff;
+    text-align: center;
+    animation: blink 5s infinite;
+    
+}
+.btn{
+    display: inline-block;
+    background-color: #aaa;
+    border: #777 outset 0.5rem;
+    padding: 0.25rem;
+    margin: 0.25rem;
+    text-decoration: none;
+    color: #fff;
+    width: 70px;
+    
+}
+@keyframes blink{
+    0%   {
+        background-color: red;
+        color: white;}
+  25%  {
+      background-color: white;
+    color: black;}
+  50%  {
+    background-color: red;
+    color: white;
+  }
+  100% {
+    background-color: white;
+    color: black;
+  }
+
+}
+/*---------------Warning-----------------*/
+/*------------------NAV----------------*/
+#menu>ul{
+    list-style: none;
+    padding: 1% 0 1% 0;
+    text-align: center;
+    font-weight: bolder;
+    margin: 2% 0 2% 0;
+    background-color: rgba(255,255,255,0.6);
+    
+    
+}
+#menu li{
+    display: inline-block;
+    margin: 0 4% 0 4%;
+    
+}
+#menu a{
+    font-size: 1rem;
+    display: inline-block;
+    text-decoration: none;
+   /*  border: rgb(245, 95, 95) solid 0.10rem; */
+    border-radius: 0.5rem;
+    margin: 0.5rem 0.25rem;
+    padding: 0.5rem;
+    background-color: whitesmoke;
+    transition: all 1s linear;
+    box-shadow: gray 10px 5px 5px;
+    color: brown;
+    width: 110px;
+    
+    
+}
+#menu a:hover{
+    /* border: #fff solid 0.10rem; */
+    background-color:  rgb(245, 95, 95);
+    color: #fff;
+    
+}
+
+
+
+/*-----------FIM NAV-------------*/
+/*----------La Team---------------*/
+section{
+    border: solid 1rem #fff;
+    margin:  2% 3% 2% 3%;
+    text-align:  center;
+}
+.title2{
+    text-align:  center;
+    margin: 0.5rem 0 0.5rem 0;
+}
+#team{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+    padding: 3% 0 3% 0;
+    
+}
+
+#team figure{
+    margin: 0.5rem;
+    padding: 1rem;
+    max-width: 150px;
+    background-color: rgba(255,255,255,0.6);
+    box-shadow: gray 5px 5px 5px;
+    transition: transform 1s;
+}
+#team figure:hover{
+    
+    transform: scale(1.2);
+}
+  
+.rounded{
+    
+    width: 100%;
+    border-radius: 30% 0%;
+    box-shadow: gray 5px 5px 5px;
+    transform: rotate(360deg);
+    transition: max-width 1s, transform 3s;
+}
+/*------------------FIN de La team---------------*/
+/*------------------Projets--------------*/
+#team2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-bottom: 5rem;
+}
+#team2 article{
+    background-color: rgba(255,255,255,0.6);
+    margin: 2rem 0.5rem 2rem 0.5rem;
+    border: solid #fff 0.3rem;
+    max-width: 250px;
+    padding: 1%;
+    transform: rotate(20deg);
+    transition: max-width 2s, background-color 2s, transform 2s;
+    box-shadow: gray 5px 5px 5px;
+}
+#team2 article:hover{
+    background-color: #FFCCCC;
+    max-width: 300px;
+  
+  transform: rotate(0deg);
+}
+
+#team2 figure{
+    border-bottom: white  double 0.5rem;
+}
+#team2 img{
+    width: 200px;
+}
+.title4{
+    margin: 1rem 0 1rem 0;
+}
+#team2 p{
+    margin: 1rem 0 1rem 0;
+}
+#team2 a {
+    
+    width: 100px;
+    
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin: 0 5px 5px 0;
+    background-color: wheat;
+    border: solid 0.2rem white;
+    border-radius: 0.2rem;
+    text-decoration: none;
+    color: white;
+    transition: all 0.1s linear;
+}
+
+#team2 a:hover{
+    color: wheat;
+    background-color: white;
+    border: wheat;
+}
+/*--------------fin projets ------------------*/
+/*--------------------temoiagnage-------------*/
+#test{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-bottom: 5rem;
+}
+.testArt{
+    background-color: rgba(255,255,255,0.6);
+    margin: 2rem 0.5rem 2rem 0.5rem;
+    border: solid #fff 0.3rem;
+    max-width: 300px;
+    padding: 1%;
+    
+    box-shadow: gray 5px 5px 5px;
+}
+video, audio{
+    width: 100%;
+}
+
+/*-------------------fin temoignage---------------*/
+/*-------------Adress----------------*/
+#adresse{
+    width: 60%;
+    display: flex;
+    margin: 0 auto;
+    font-size: 0.8rem;
+}
+#adresse>div{
+    width: 100%;
+}
+#adresse>div:last-child{
+    background-color: rgba(255,255,255,0.6);
+    width: 100%;
+    line-height: 40px;
+}
+
+/*---------------Fin Adress--------------------*/
+/*----------------Formulaire--------------------*/
+#register>form{
+    /* border: white solid 0.2rem;
+    width: 400px;
+    margin: 0 auto; */
+    background-color: rgba(255,255,255,0.6);
+    margin: 2rem auto 2rem auto;
+    border: solid #fff 0.3rem;
+    max-width: 300px;
+   
+    padding: 2% 1%;
+    
+    box-shadow: gray 5px 5px 5px;
+}
+#register div{
+    width: 70%;
+    margin: 0 auto 1rem auto;
+    
+}
+
+
+#register input{
+    width: 100%;
+    margin: 0 auto;
+    
+}
+/*-------------Fin de Formulaire------------------*/
+/*----------------Footer------------------*/
+#footer{
+    background-color: rgba(0,0,0, 0.1);
+ 
+}
+
+#footer ul{
+    list-style: none;
+    padding-left:0; 
+}
+#footer>ul{
+    display: flex;
+    justify-content: center
+}
+#footer>ul>li{
+    margin: 1rem;
+    padding: 0 1rem;
+    border-left: 0.1rem solid black;
+    
+}
+#footer>ul>li>ul>li:hover, strong{
+    background-color: #fff;
+}
+
+
+#footer>ul>li:first-child{
+    border-left: none;
+    
+}
+
+#footer a{
+    text-decoration: none;
+    color: black;
+    font-size: 0.8rem;
+    transition: all 0.5s;
+    width: 100%;
+}
+
+/*----------------Fin Footer----------------*/
+
+

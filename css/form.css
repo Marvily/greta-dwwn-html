@@ -1,0 +1,49 @@
+
+/*--------------Form.HTML---------------*/
+
+#wrapper h1{
+    text-align: center;
+}
+:root{
+    font-size: 70%;
+}
+#formulaire{
+    width: 60%;
+    margin: 2rem auto;
+    background-color: rgba(255,255,255,0.6);
+    
+}
+#formulaire div{
+    margin: 0.5rem 0;
+}
+
+#formulaire label{
+    display: inline-block;
+    font-weight: bolder;
+    text-align: right;
+    width: 25%;
+      
+}
+#formulaire div>input+label{
+    text-align: left;
+} 
+
+#formulaire input,#formulaire textarea,#formulaire select,#formulaire select{
+    width: 65%;
+
+}
+
+#formulaire input[type=radio], #formulaire input[type=checkbox], #formulaire input[type=color], #formulaire input[type=range]{
+   width: initial;
+}
+
+#formulaire>input{
+    width: 32%;
+}
+#formulaire fieldset>fieldset{
+    margin: 0.5rem;
+    padding: 0.5rem;
+}
+input:focus, select:focus, textarea:focus{
+    background-color: #f8d8d8;
+}

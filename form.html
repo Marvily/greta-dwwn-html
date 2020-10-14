@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/form.css">
+  </head>
+
+  <body>
+    <main id="wrapper">
+      <h1>Formulaire de Candidacture</h1>
+
+      <form action="save.php" method="POST" id="formulaire">
+        <fieldset>
+          <legend>Identité</legend>
+          <div>
+            <label for="fname">Prénom :</label>
+            <input
+              type="text"
+              name="fname"
+              id="fname"
+              placeholder="Prénom Usuel"
+              pattern="[a-zA-Zéèëêàù\-]{2,30}"
+              required
+            />
+          </div>
+          <div>
+            <label for="dob">Date de Naissance :</label>
+            <input type="date" name="dob" id="dob" />
+          </div>
+          <div>
+            <label for="mail">Adress email :</label>
+            <input type="email" name="mail" id="mail" />
+          </div>
+          <div>
+            <label for="site">Site web perso :</label>
+            <input type="url" name="site" id="site" />
+          </div>
+          <div>
+            <label for="tel">Telephone :</label>
+            <input type="tel" name="tel" id="tel" />
+          </div>
+          <div>
+            <label for="region">Region :</label>
+            <select name="region" id="region">
+              <optgroup label="Ouest">
+                <option value="BZ">Bretagne</option>
+                <option value="NM">Normandie</option>
+              </optgroup>
+              <optgroup label="Nord">
+                <option value="PC">Pas-de-Calais</option>
+                <option value="PI">Picardie</option>
+              </optgroup>
+              <optgroup label="Est">
+                <option value="AL">Alsace</option>
+                <option value="LO">Lorraine</option>
+              </optgroup>
+              <optgroup label="Sud">
+                <option value="CA">PACA</option>
+                <option value="OC">Occitainie</option>
+              </optgroup>
+              <optgroup label="Centre">
+                <option value="IF">Ile de France</option>
+              </optgroup>
+            </select>
+          </div>
+
+          <fieldset>
+            <legend>Grenre</legend>
+
+            <div>
+              <input
+                type="radio"
+                name="gender"
+                id="genFem"
+                value="Féminin"
+                checked
+              />
+              <label for="genFem">Feminin</label>
+            </div>
+
+            <div>
+              <input type="radio" name="gender" id="genMas" value="Masculin" />
+              <label for="genMas">Masculin</label>
+            </div>
+
+            <div>
+              <input type="radio" name="gender" id="genNeu" value="Neutre" />
+              <label for="genNeu">Neutre</label>
+            </div>
+          </fieldset>
+        </fieldset>
+
+        <fieldset>
+          <legend>Compétences</legend>
+
+          <div>
+            <label for="exp">Experience :</label>
+            <input
+              type="number"
+              name="exp"
+              id="exp"
+              min="1"
+              max="35"
+              step="1"
+            />
+          </div>
+          <div>
+            <label for="lang">Langages Principal:</label>
+            <input type="text" name="lang" id="lang" list="langList" />
+            <datalist id="langList">
+              <option value="Pyton"></option>
+              <option value="Java"></option>
+              <option value="Pearl"></option>
+              <option value="Basic"></option>
+              <option value="COBOL"></option>
+              <option value="C++"></option>
+              <option value="C"></option>
+              <option value="Turbo Pascal"></option>
+              <option value="Assembleur"></option>
+              <option value="Coréen"></option>
+            </datalist>
+          </div>
+
+          <div>
+              <label for="area">Mobilité :</label>
+            <select name="area" id="area" multiple  size="3">
+                <option value="">--Choisissé votre option--</option>
+                <option value="EU">Europe</option>
+                <option value="AS">Asie</option>
+                <option value="AM">Amerique</option>
+                <option value="AF">Afrique</option>
+                <option value="OC">Oceanie</option>
+                <option value="MC">Mon Canapé</option>
+               
+            </select>
+        </div>
+
+        <div>
+            <label for="cv">Curriculum Vitae :</label>
+            <input type="file" name="cv" id="cv" accept=".pdf,.doc,.dox,.odt,.txt">
+            <input type="hidden" name="MAX_FILE_SIZE" value="5242880">
+        </div>
+
+        <div>
+            <label for="test">Test couleur :</label>
+            <input type="color" name="test" id="test" title="Teste de personalité au travers le choix d'une couleur.">
+        </div>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Pretentions salariales</legend>
+
+            <div>
+                <label for="salary">Salaire :</label>
+                <input 
+                type="range" 
+                name="salary" 
+                id="salary" 
+                min="2500" 
+                max="8000" 
+                step="100" 
+                value="3200"
+                onchange="document.getElementById('salVal').textContent=this.value">
+                
+                <output id="salVal"></output>
+            </div>
+            <fieldset>
+                <legend>Statut Souhaité:</legend>
+                <div>
+                    
+                    <input type="checkbox" name="status[]" id="stat_jr" value="Dev-Jr">
+                    <label for="stat_jr">Développeur Junior</label>
+
+                </div>
+                <div>
+                    
+                    <input type="checkbox" name="status[]" id="stat_sr" value="Dev-Sr">
+                    <label for="stat_sr">Développeur Senior</label>
+
+                </div>
+                <div>
+                    
+                    <input type="checkbox" name="status[]" id="stat_cp" value="Dev-Prj">
+                    <label for="stat_cp">Chef de projets</label>
+
+                </div>
+                <div>
+                    
+                    <input type="checkbox" name="status[]" id="stat_dr" value="Dir-SI">
+                    <label for="stat_dr">Directeur SI</label>
+
+                </div>
+
+            </fieldset>
+
+            <div>
+                <label for="rem">Remarques :</label>
+                <textarea name="rem" id="rem" cols="30" rows="5"></textarea>
+            </div>
+
+        </fieldset>
+
+        <input type="submit" value="Enregistrer" />
+        <input type="reset" value="Effacer">
+        <input type="image" src="pics/sea-creature_owler_20160227_164532_large.gif" alt="Image">
+      </form>
+    </main>
+  </body>
+</html>
