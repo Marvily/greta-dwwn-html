@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: linear-gradient(rgb(153, 218, 229), #22c1c7);
+}
+
+#menu{
+    
+    background: rgb(118, 214, 218);
+    height: 3rem;
+    width: 100%;
+    
+}
+
+
+#menu ul{
+   
+  text-align: center;
+  
+}
+#menu li{
+    margin-top: 1rem;
+    display: inline-block;
+    list-style: none;
+    
+}
+
+#menu a{
+    background: rgba(255,255,255,0.8);
+    text-decoration: none;
+    color: black;
+    border: black solid .1rem;
+    border-radius: 0.3rem;
+    padding: 0.6rem;
+    font-weight: bold;
+    font-size: .8rem;
+    
+    
+}
+
+@media (min-width: 740px){
+    #menu ul{
+   
+        text-align: right;
+        
+      }
+      #menu a{
+        font-size: 1rem;  
+      }
+}
+
+#principal{
+    height: 100vh;
+    display: flex;
+}
+#principal>div{
+    height: 80%;
+    /* background-color: blueviolet; */
+    width: 90%;
+    text-align: center;
+    margin: auto;
+    
+}
+#principal h1, #principal p{
+    line-height: 3rem;
+}
+
+@media (min-width: 760px){
+    #principal>div{
+        display: flex;
+        
+        
+        padding: 2rem;
+        
+      }
+      #principal img{
+          width: 300px;
+          
+      }
+      #principal img, #principal div>div{
+          
+          margin: auto;
+      }
+      #principal div>div{
+        padding: 3rem;
+        width: 300px;
+        border-top: double 1rem #fff;
+        border-bottom: double 1rem #fff;
+        
+      }
+}
+
+#n1{
+    background-color: salmon;
+    text-align: center;
+    padding: 3rem 0;
+}
+
+
+#n1 div>article{
+    padding: .2rem;
+    border: solid white .1rem;
+    width: 300px;
+    margin: 3rem auto;
+    background-color: rgba(255,255,255,0.6);
+    
+}
+#n1 img{
+    width: 100%;
+}
+
+@media (min-width: 760px){
+    #n1 div{
+        display: flex;
+    }
+    #n1 div>article{
+        width: 230px;
+    }
+}
+
+#n2{
+    background-color: rgb(155, 129, 155);
+    text-align: center;
+    padding: 3rem 0;
+}
+#n2 img{
+    width: 80%;
+}
+#n2 article{
+    padding: .2rem;
+    border: solid white .1rem;
+    width: 300px;
+    height: 300px;
+    margin: 3rem auto;
+    background-color: rgba(255,255,255,0.6);
+    
+
+}
+#n2 article div{
+    display: inline-block;
+    margin: auto;
+}
+#n2 article div div{
+    margin: .5rem ;
+    width: 120px;
+    height: 120px;
+    background-color: white;
+    
+}
+
+@media (min-width: 760px){
+    #n2 div{
+        display: flex;
+    }
+}
