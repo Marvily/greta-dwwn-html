@@ -53,7 +53,7 @@ body{
 }
 
 #principal{
-    height: 100vh;
+    
     display: flex;
 }
 #principal>div{
@@ -130,7 +130,7 @@ body{
     width: 80%;
 }
 #n2 article{
-    padding: .2rem;
+    padding: auto;
     border: solid white .1rem;
     width: 300px;
     height: 300px;
@@ -141,7 +141,7 @@ body{
 }
 #n2 article div{
     display: inline-block;
-    margin: auto;
+    
 }
 #n2 article div div{
     margin: .5rem ;
@@ -155,4 +155,98 @@ body{
     #n2 div{
         display: flex;
     }
+    #n2 article{
+        width: 30%;
+        
+    }
 }
+
+
+
+ #n3{
+     background-color: #ffffff;
+     text-align: center;
+    padding: 1rem 0;
+ }
+ #n3 form{
+     margin-top: 2rem;
+ }
+
+
+
+
+ #n4{
+    background-color: rgb(243, 192, 148);
+    text-align: center;
+    padding: 1rem 0;
+ }
+
+ #n4>div{
+    margin: 2rem auto;
+    width: 80%;
+    
+
+ }
+ #n4>div iframe,  #n4>div>div{
+     height: 13rem;
+     margin-top: 2rem;
+     width: 100%;
+ }
+
+ #n4>div>div{
+     background-color: rgba(255,255,255,0.6);
+    
+    
+ }
+
+ @media (min-width: 760px){
+    #n4>div{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #n4>div iframe,  #n4>div>div{
+        width: 45%;
+        height: 14rem;
+    }
+    #n4 form fieldset{
+        margin: 2px auto;
+        height: 14rem;
+    }
+
+ }
+
+ footer{
+     height: 3rem;
+     display:flex;
+     position: relative;
+ }
+ footer p:first-child{
+    
+     height: 1rem;
+     
+     margin: auto;
+     text-align: center;
+     
+ }
+
+ footer a:first-child{
+     font-weight: bold;
+     color: #000;
+     text-decoration: none;
+     transition: 400ms;
+     font-size: .8rem;
+ }
+ footer a:first-child:hover{
+     color: rgba(252, 246, 246, 0.8);
+ }
+
+ footer p:last-child{
+     position: absolute;
+     right: 0%;
+     bottom: 0%;
+     
+ }
+
+
+
